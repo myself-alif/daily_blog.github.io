@@ -1,0 +1,37 @@
+@media (max-width: 992px) {
+  .navbar-nav > .nav-item:first-child {
+    margin-top: 2rem;
+  }
+  .carousel-caption > h5 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+  }
+  .carousel-caption > p {
+    font-size: 1.5rem;
+  }
+
+  .main-flex-container {
+    display: block;
+  }
+  .main-flex-container > .content {
+    height: auto !important;
+    overflow-y: hidden !important;
+    margin-bottom: 30rem;
+  }
+
+  .sidebar > h3 {
+    margin-top: 5rem;
+  }
+
+  .search-bar > form {
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 344px) {
+  .search-bar > form > .form-group > input[type="text"] {
+    width: 26rem;
+  }
+}

@@ -1,0 +1,426 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+::placeholder {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+::selection {
+    background-color: #cc1139;
+    color: white;
+}
+
+body > .container-fluid {
+    overflow-x: hidden;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-brand > span {
+    color: #cc1139;
+}
+
+.container > .navbar-brand {
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.container > .navbar-brand:hover,
+.container > .navbar-brand:active {
+    color: white;
+    transition: color 0.7s ease;
+}
+
+.navbar-nav > .nav-item:not(:last-child) > .nav-link {
+    margin-right: 0.5rem;
+}
+
+.navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-collapse > .navbar-nav > .nav-item > .nav-link:hover,
+.navbar-collapse > .navbar-nav > .nav-item > .nav-link:active {
+    color: white;
+    transition: color 0.7s ease;
+}
+
+.hamburger {
+    padding: 0;
+}
+
+.hamburger:hover .hamburger-inner,
+.hamburger:hover .hamburger-inner::before,
+.hamburger:hover .hamburger-inner::after {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.carousel-item {
+    width: 100vw;
+    height: 75vh;
+    position: relative;
+}
+
+.carousel-item > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption > h5 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+}
+.carousel-caption > p {
+    font-size: 2rem;
+}
+
+.wrappar {
+    background-color: #f6f6f6;
+}
+
+.wrappar > .container {
+    padding-top: 10rem;
+    max-width: 111.8rem;
+}
+
+.main-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wrappar > .container > .main-flex-container > .content {
+    overflow-y: scroll;
+    height: 100vh;
+    flex-grow: 0;
+    flex-shrink: 4;
+    flex-basis: 65.5%;
+    margin-bottom: 0;
+}
+.wrappar > .container > .main-flex-container > .sidebar {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 29%;
+}
+
+.post {
+    max-height: 90%;
+    overflow-x: hidden;
+}
+
+.post:not(:first-child) {
+    margin-top: 10rem;
+}
+.post-image {
+    position: relative;
+    height: 60%;
+}
+
+.view-count {
+    position: absolute;
+    background-color: #ffc107;
+    padding: 0rem 1rem;
+    padding-top: 0.45rem;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.heart {
+    position: absolute;
+    background-color: #ffc107;
+    padding: 0rem 1rem;
+    padding-top: 0.45rem;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+.post-image .post-category p {
+    padding: 0rem 1rem;
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #ffc107;
+    bottom: 0;
+    left: 1rem;
+}
+
+.post-image > img {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.post-info {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.post-content > .btn-outline-danger:last-child {
+    margin-bottom: 1rem;
+}
+
+.post-info .text-muted {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-right: 1rem;
+}
+.post-content h2 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 20rem;
+}
+
+.post-content h2 a {
+    font-family: "Playfair Display", serif;
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.post-content h2 a:hover {
+    color: rgba(0, 0, 0, 1);
+    transition: color 0.7s ease;
+}
+
+.post-info > p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.blog-post {
+    color: rgba(19, 5, 5, 0.6);
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: 4rem;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.recent-post {
+    max-width: 40rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-post-image {
+    flex: 0 0 10rem;
+    height: 5rem;
+    margin-right: 2.5rem;
+}
+
+.recent-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.recent-post-title {
+    flex: 1 0 17.5rem;
+    min-height: 7rem;
+}
+
+.recent-post-title a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    color: rgba(19, 5, 5, 0.9);
+}
+
+.recent-post-title a:hover {
+    color: #cc1139;
+    transition: color 0.1s ease;
+}
+.search-bar > form {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.search-bar > form > .form-group > input[type="text"] {
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 30rem;
+    flex-shrink: 1;
+    height: 3rem;
+    font-family: "Work Sans", sans-serif;
+}
+
+textarea[name="comment"] {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
+    border: 1px solid #c4cad1;
+}
+textarea[name="comment"]:focus,
+textarea[name="comment"]:active {
+    outline: none;
+    border: 1px solid #959ca3;
+}
+
+::placeholder {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.accordion-item {
+    background-color: transparent;
+}
+
+.accordion-button {
+    background-color: transparent;
+}
+
+.accordion-body ul li a {
+    text-decoration: none;
+    color: rgba(19, 5, 5, 0.75);
+}
+
+.accordion-body ul li a:hover {
+    color: #cc1139;
+    transition: color 0.1s ease;
+}
+
+.accordion-body ul li,
+.accordion-body h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.categories > .h3 {
+    margin-top: 3rem;
+}
+
+.category-items {
+    height: 25rem;
+    overflow-y: scroll;
+}
+
+.category-item {
+    list-style: none;
+}
+
+.category-item:not(:last-child) {
+    margin-bottom: 1rem;
+
+    border-bottom: 1px solid rgba(92, 51, 51, 0.15);
+}
+
+.category-item-link {
+    display: block;
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(19, 5, 5, 0.75);
+    margin-bottom: 1rem;
+}
+
+.category-item-link:hover {
+    color: #cc1139;
+    transition: color 0.1s ease;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+    min-height: 8rem;
+}
+
+.footer-text p {
+    font-family: "Playfair Display", serif;
+    color: #ffffffbf;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.footer-text p span {
+    color: #cc1139;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.footer-text p span:hover {
+    color: #f10a3c;
+    transition: color 0.5s ease;
+}
+.pagination {
+    overflow-x: hidden;
+    margin-top: 1rem;
+}
+
+.pagination li {
+    font-size: 1.8rem;
+}
+
+.comment-container {
+    position: relative;
+}
+.comment-container:last-child {
+    margin-bottom: 4rem;
+}
+
+.time {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 0.5rem;
+}
+
+.align-self-center a {
+    font-weight: bold;
+    color: rgba(19, 5, 5, 0.75);
+    text-decoration: none;
+}
+
+.align-self-center a:hover {
+    color: #f10a3c;
+    transition: color 0.5s ease;
+}
