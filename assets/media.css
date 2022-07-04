@@ -33,5 +33,9 @@
 @media (max-width: 344px) {
   .search-bar > form > .form-group > input[type="text"] {
     width: 26rem;
+    
   }
+  
+  .container-fluid wrappar > .container {
+    padding-top:20px;
 }
